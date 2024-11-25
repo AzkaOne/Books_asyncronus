@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,13 +35,16 @@ class FuturePage extends StatefulWidget {
 class _FuturePageState extends State<FuturePage> {
   String result = '';
 
+// soal3
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
     const path = '/books/v1/volumes/1zYfEQAAQBAJ';
     Uri url = Uri.https(authority, path);
     return http.get(url);
   }
+  // end soal 3
 
+// start soal 4
   Future<int> returnOneAsync() async {
     await Future.delayed(const Duration(seconds: 3));
     return 1;
@@ -65,6 +69,22 @@ class _FuturePageState extends State<FuturePage> {
       result = total.toString();
     });
   }
+  // end soal 4
+
+  // start  soal5
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+  // end soal 5
 
   @override
   Widget build(BuildContext context) {
@@ -80,15 +100,21 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: const Text('GOO!'),
               onPressed: () {
-                setState(() {});
+                // setState(() {});
                 // getData().then((value) {
                 //   result = value.body.toString().substring(0, 100);
                 //   setState(() {});
                 // }).catchError((_) {
                 //   result = 'an error occured';
                 //   setState(() {});
-                // });
-                count();
+                // }); //soal3
+                // count(); //soal4
+
+                getNumber().then((value) {
+                  setState(() {
+                    result = value.toString();
+                  });
+                });
               },
             ),
             const Spacer(),
