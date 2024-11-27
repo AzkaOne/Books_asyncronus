@@ -22,3 +22,5 @@ pada kode pertama mengunakan FutureGroup dimana merupakan library dari async yan
 sedangkan pad akode kedua adalah metode bawaan dart dan future yang dikembalikan harus sudah didefinisikan,dan tanpa memanggil close().
 
 9.![soal 9](image-10.png)
+10.![soal 10](image-11.png)
+pada kode pertama cukup panjang untuk eksekusi kode pada button namun berbeda dengan kode kedua yang cukup pendek dimana pada handleerror memanggil returnerror.

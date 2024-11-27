@@ -123,6 +123,18 @@ class _FuturePageState extends State<FuturePage> {
   }
   // end soal 9
 
+  Future handleError() async {
+    try {
+      await returnError();
+    } catch (error) {
+      setState(() {
+        result = error.toString();
+      });
+    } finally {
+      print('COMpleeda');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -149,15 +161,16 @@ class _FuturePageState extends State<FuturePage> {
 
                 /*// soal 7&8
                 returnFG();*/
-                returnError().then((value) {
-                  setState(() {
-                    result = "successs";
-                  });
-                }).catchError((onError) {
-                  setState(() {
-                    result = onError.toString();
-                  });
-                }).whenComplete(() => print('COMPLETEEEEEE'));
+                // returnError().then((value) {
+                //   setState(() {
+                //     result = "successs";
+                //   });
+                // }).catchError((onError) {
+                //   setState(() {
+                //     result = onError.toString();
+                //   });
+                // }).whenComplete(() => print('COMPLETEEEEEE'));
+                handleError();
               },
             ),
             const Spacer(),
