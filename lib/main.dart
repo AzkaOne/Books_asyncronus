@@ -116,6 +116,13 @@ class _FuturePageState extends State<FuturePage> {
   }
   // end soal7
 
+  // start soal 9
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('SOMETHING TERRIBLE HAPPENED');
+  }
+  // end soal 9
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -140,7 +147,17 @@ class _FuturePageState extends State<FuturePage> {
                 // }); //soal3
                 // count(); //soal4
 
-                returnFG();
+                /*// soal 7&8
+                returnFG();*/
+                returnError().then((value) {
+                  setState(() {
+                    result = "successs";
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('COMPLETEEEEEE'));
               },
             ),
             const Spacer(),
