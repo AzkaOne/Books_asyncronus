@@ -17,3 +17,6 @@ lalu pas kode ke 2 melakukan penghitungan nilai sesuai dengan nilai yang dikemba
 pada kode ke 5 dilakukan penambhan cath dimana ketika proses await jika gagal akan memberikan pesan error yang akan ditampilkan pada kode ke 6 yaitu catcherror.
 
 7.![soal 7](image-8.png)
+8.![soal 8](image-9.png)
+pada kode pertama mengunakan FutureGroup dimana merupakan library dari async yang akan mengelola future dan harus mengunakan close() untuk menghentikan future yang ditambahkan
+sedangkan pad akode kedua adalah metode bawaan dart dan future yang dikembalikan harus sudah didefinisikan,dan tanpa memanggil close().
