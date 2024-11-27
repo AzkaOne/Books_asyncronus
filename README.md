@@ -13,4 +13,5 @@ lalu pas kode ke 2 melakukan penghitungan nilai sesuai dengan nilai yang dikemba
 
 5.![soal 5](image-6.png)
 
-6.
+6.![soal 6](image-7.png)
+pada kode ke 5 dilakukan penambhan cath dimana ketika proses await jika gagal akan memberikan pesan error yang akan ditampilkan pada kode ke 6 yaitu catcherror.
