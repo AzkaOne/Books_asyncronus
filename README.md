@@ -34,3 +34,6 @@ tidak karena saya menjalankanya diweb browser.
 16![soal16](image-15.png)
 ![soal16](image-16.png)
 karena kita membuat file navigation first yang berfunmgsi untuk menampilkan background dan tombol yang mengarah ke navigation second di navigation first ada method yang untuk mengambil data dari navigation second ketika kita memilih warna yang di navigation second maka data warna akan ditangkap ke metod navigation first dan ditamplikan.
+17.![soal 17](image-17.png)
+![soal 17](image-18.png)
+beda ndengan percobaan sebelumnya dimana perlu berpindah page dengan navigation namun di percobaan ini hanya membutuhkan popup untuk menentukan pilihan warna dan memanggil data sama seperti percobaan sebelumnya hanya tidak berpindah page.
