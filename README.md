@@ -29,4 +29,5 @@ pada kode pertama cukup panjang untuk eksekusi kode pada button namun berbeda de
 12![soal 12](image-12.png)
 tidak karena saya menjalankanya diweb browser.
 13.![soal 13](image-13.png)
-14
+14.![soal 14](image-14.png)
+15
