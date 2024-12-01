@@ -24,3 +24,7 @@ sedangkan pad akode kedua adalah metode bawaan dart dan future yang dikembalikan
 9.![soal 9](image-10.png)
 10.![soal 10](image-11.png)
 pada kode pertama cukup panjang untuk eksekusi kode pada button namun berbeda dengan kode kedua yang cukup pendek dimana pada handleerror memanggil returnerror.
+
+11.
+12![soal 12](image-12.png)
+tidak karena saya menjalankanya diweb browser.
