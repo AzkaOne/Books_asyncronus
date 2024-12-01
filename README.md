@@ -31,3 +31,6 @@ tidak karena saya menjalankanya diweb browser.
 13.![soal 13](image-13.png)
 14.![soal 14](image-14.png)
 15
+16![soal16](image-15.png)
+![soal16](image-16.png)
+karena kita membuat file navigation first yang berfunmgsi untuk menampilkan background dan tombol yang mengarah ke navigation second di navigation first ada method yang untuk mengambil data dari navigation second ketika kita memilih warna yang di navigation second maka data warna akan ditangkap ke metod navigation first dan ditamplikan.

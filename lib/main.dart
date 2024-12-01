@@ -1,4 +1,5 @@
 import 'package:asycronys/geolocation.dart';
+import 'package:asycronys/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'dart:async';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LocationScreen(),
+      home: const NavigationFirst(),
     );
   }
 }
